@@ -1,0 +1,27 @@
+<div class="col l3 s12 profile grey lighten-1">
+  <h4 class="sub-head pink lighten-1 white-text valign-wrapper z-depth-4">
+    PROFILE
+    <i class="material-icons medium">perm_identity</i>
+  </h4>
+  <div class="card z-depth-3">
+    <div class="card-image" style="margin-top: 20px;">
+      <img
+        src="http://gravatar.com/avatar/<%= user._id %>?s=450&f=y&d=retro"
+        alt=""
+      />
+    </div>
+    <div class="card-content">
+      <span class="card-title"><%= user.username %></span>
+      <p>
+        <%= user.about %>
+      </p>
+    </div>
+    <div class="card-action">
+      <a class="waves-effect waves-light btn pink lighten-1" id="notfbtn"
+        >Notifications <% if(user.notifications.length > 0) { %>
+        <span class="new badge"> <%= user.notifications.length %> </span>
+        <% } %>
+      </a>
+    </div>
+  </div>
+</div>
