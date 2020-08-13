@@ -14,7 +14,7 @@ require("./config/passport")(passport);
 
 //Connecting to mongodb
 mongoose.connect(
-  "mongodb+srv://indu:pdSBSndZHQ7HQtwq@cluster0-aps63.mongodb.net/test",
+  "mongodb+srv://username:passward@cluster0-aps63.mongodb.net/test",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true
